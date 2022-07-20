@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Kumbh Sans", sans-serif;
+}
+
+.App {
+	width: 80%;
+	margin: 0 auto;
+}
+.logo {
+	cursor: pointer;
+}
+.header {
+	padding: 1rem;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar ul {
+	display: flex;
+	gap: 2rem;
+}
+.navbar ul li {
+	list-style: none;
+}
+.navbar ul li a {
+	text-decoration: none;
+	color: hsl(219, 9%, 45%);
+	font-size: 1.1rem;
+	text-transform: capitalize;
+	transition: 0.1s;
+	padding-bottom: 1.9rem;
+}
+.navbar ul li a:hover {
+	border-bottom: 5px solid hsl(26, 100%, 55%);
+}
+.header-icons {
+	display: flex;
+	gap: 3rem;
+	align-items: center;
+}
+.icon-2 img {
+	width: 100%;
+}
+.icon-2 {
+	width: 60px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.1s;
+	border-radius: 50%;
+}
+.icon-1 img {
+	width: 30px;
+}
+.icon-2:hover {
+	border: 3px solid hsl(26, 100%, 55%);
+}
+.icon-1 {
+	cursor: pointer;
+	position: relative;
+}
+.icon-1 span {
+	position: absolute;
+	background-color: hsl(26, 100%, 55%);
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	top: -8px;
+	right: -10px;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+}
+.cart {
+	position: absolute;
+	top: 50px;
+	right: -200px;
+	width: 400px;
+	height: 250px;
+	background-color: white;
+	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+}
+.item-1 h4 {
+	text-transform: capitalize;
+	font-size: 20px;
+	padding: 20px;
+}
+.item-1 {
+	border-bottom: 2px solid hsl(220, 14%, 75%);
+}
+.content {
+	display: flex;
+	gap: 3rem;
+	padding: 3rem;
+	justify-content: space-between;
+}
+.item-img {
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	gap: 1rem;
+}
+.small {
+	display: flex;
+	overflow: hidden;
+	gap: 2rem;
+	justify-content: space-between;
+}
+.item-detail {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-self: center;
+}
+.main img {
+	width: 100%;
+	border-radius: 10px;
+}
+.small img {
+	width: 100px;
+	border-radius: 10px;
+}
+/*  */
+.item-detail h4 {
+	color: hsl(26, 100%, 55%);
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+.item-detail h1 {
+	text-transform: capitalize;
+	font-size: 3rem;
+	font-weight: 700;
+}
+.item-detail p {
+	color: hsl(219, 9%, 45%);
+	font-weight: 400;
+	line-height: 1.5;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+.prices {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.price {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+.price p {
+	background-color: hsl(25, 100%, 94%);
+	color: hsl(26, 100%, 55%);
+	font-size: 16px;
+	font-weight: 700;
+	padding: 3px 7px;
+}
+.buttons {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.button-icons {
+	display: flex;
+	gap: 1rem;
+	background-color: hsl(223, 64%, 98%);
+	justify-content: space-between;
+	padding: 5px;
+	align-items: center;
+	border-radius: 15px;
+	align-self: center;
+	width: 200px;
+}
+.items {
+	padding: 3px 5px;
+}
+.button-icons p {
+	font-weight: 700;
+	color: black;
+}
+.btn {
+	padding: 17px 80px;
+	background-color: hsl(26, 100%, 55%);
+	color: white;
+	display: flex;
+	gap: 1rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	font-size: 16px;
+	border-radius: 15px;
+	border: none;
+	cursor: pointer;
+}
+.plus,
+.minus {
+	cursor: pointer;
+}
+.item-2 {
+	padding: 20px;
+}
+.image {
+	width: 50px;
+	height: auto;
+}
+.image img {
+	width: 100%;
+	border-radius: 5px;
+}
+.text h4 {
+	color: hsl(220, 14%, 75%);
+	font-weight: 400;
+	text-transform: capitalize;
+	margin-bottom: 8px;
+}
+.text p {
+	color: hsl(220, 14%, 75%);
+}
+.text p strong {
+	color: black;
+}
+.icon {
+	width: 20px;
+}
+.icon img {
+	width: 100%;
+}
+.cart-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+}
+.cart-item-1 {
+	display: flex;
+	gap: 1rem;
+
+	align-items: center;
+	justify-content: space-between;
+}
